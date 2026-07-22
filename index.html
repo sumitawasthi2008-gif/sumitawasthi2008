@@ -1,0 +1,192 @@
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Awasthi - Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #1a1b26; /* Tokyonight background */
+            --text-main: #c0caf5;
+            --accent: #7aa2f7;
+            --card-bg: #24283b;
+            --heading-color: #bb9af7;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1, h2, h3 {
+            color: var(--heading-color);
+        }
+        h1 { font-size: 2.5rem; text-align: center; margin-bottom: 10px; }
+        h2 { border-bottom: 2px solid #3b4261; padding-bottom: 10px; margin-top: 40px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .badges img { margin: 5px; border-radius: 4px; }
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .stats img {
+            max-width: 100%;
+            margin: 10px 0;
+        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        blockquote {
+            border-left: 4px solid var(--accent);
+            padding: 10px 20px;
+            margin: 20px 0;
+            background: #24283b;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+        .social-links { display: flex; flex-wrap: wrap; gap: 10px; }
+        .intro-text {
+            text-align: center;
+            font-size: 1.15rem;
+            margin-bottom: 40px;
+            color: #9ece6a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi there 👋, I'm Sumit Awasthi</h1>
+        <div class="intro-text">
+            🎓 B.Tech Computer Science & Engineering (CSE) Student<br>
+            🏫 ABES Engineering College, Ghaziabad<br>
+            💻 Passionate about Software Development, Artificial Intelligence, and Open Source<br>
+            🌱 Currently learning Data Structures & Algorithms, Python, Linux, and Web Development<br>
+            🎯 Goal: Become a skilled Software Engineer and build impactful projects
+        </div>
+
+        <h2>🛠️ Tech Stack</h2>
+        <h3>💻 Programming Languages</h3>
+        <div class="badges">
+            <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
+            <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+            <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+        </div>
+
+        <h3>⚙️ Tools & Technologies</h3>
+        <div class="badges">
+            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+            <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code">
+            <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+            <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+        </div>
+
+        <h2>📚 Currently Learning</h2>
+        <ul>
+            <li>Data Structures & Algorithms</li>
+            <li>Advanced C++</li>
+            <li>React.js</li>
+            <li>Python Development</li>
+            <li>Linux & Operating Systems</li>
+            <li>AI Fundamentals</li>
+            <li>Full Stack Web Development</li>
+        </ul>
+
+        <h2>🚀 Featured Projects</h2>
+        
+        <div class="card">
+            <h3>🛒 Amazon Clone</h3>
+            <p>A responsive e-commerce website inspired by Amazon, built using HTML, CSS, and JavaScript.</p>
+            <strong>Features:</strong>
+            <ul>
+                <li>Responsive UI</li>
+                <li>Product layout</li>
+                <li>Navigation system</li>
+                <li>Interactive elements</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🎓 Student Result Calculator</h3>
+            <p>A web application that calculates student marks, percentage, and grades.</p>
+            <strong>Technologies Used:</strong>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>⚛️ React Practice Projects</h3>
+            <p>A collection of React projects covering:</p>
+            <ul>
+                <li>Components</li>
+                <li>Props</li>
+                <li>Hooks</li>
+                <li>State Management</li>
+                <li>Vite Configuration</li>
+            </ul>
+        </div>
+
+        <h2>📊 GitHub Stats</h2>
+        <div class="stats" style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+            <img src="https://github-readme-stats.vercel.app/api?username=sumitawasthi2008&show_icons=true&theme=tokyonight" alt="Sumit's GitHub Stats">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sumitawasthi2008&layout=compact&theme=tokyonight" alt="Top Languages">
+        </div>
+
+        <h2>🔥 GitHub Streak</h2>
+        <div class="stats" style="text-align: center;">
+            <img src="https://streak-stats.demolab.com?user=sumitawasthi2008&theme=tokyonight" alt="GitHub Streak">
+        </div>
+
+        <h2>🏆 Achievements & Goals</h2>
+        <ul>
+            <li>📌 Building strong foundations in Computer Science</li>
+            <li>📌 Practicing DSA regularly</li>
+            <li>📌 Creating real-world projects</li>
+            <li>📌 Exploring Artificial Intelligence and Software Development</li>
+        </ul>
+
+        <h2>📫 Connect With Me</h2>
+        <div class="social-links">
+            <a href="https://github.com/sumitawasthi2008" target="_blank">
+                <img src="https://img.shields.io/badge/GitHub-sumitawasthi2008-black?style=for-the-badge&logo=github" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/sumit-awasthi-14b7483a2" target="_blank">
+                <img src="https://img.shields.io/badge/LinkedIn-Sumit%20Awasthi-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn">
+            </a>
+            <a href="https://leetcode.com/u/25_CSE_1176/" target="_blank">
+                <img src="https://img.shields.io/badge/LeetCode-25_CSE_1176-orange?style=for-the-badge&logo=leetcode" alt="LeetCode">
+            </a>
+        </div>
+
+        <h2>💡 Quote</h2>
+        <blockquote>
+            "Keep learning. Keep building. Keep improving."
+        </blockquote>
+        
+        <p style="text-align: center; margin-top: 40px; color: #565f89;">
+            ⭐ Thanks for visiting my profile!
+        </p>
+    </div>
+</body>
+</html>"""
+
+with open('sumit_profile.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("File created successfully.")
